@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { decode } from 'html-entities';
 
 function Question(props) {
-    
+
     const question = props.allAnswer.map((el) => 
         <div
             onClick={() => props.setAnswer(props.id, el)}
