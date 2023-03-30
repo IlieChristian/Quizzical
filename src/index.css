@@ -226,7 +226,7 @@ section {
 }
 
 .select-section {
-  width: 500px;
+  max-width: 500px;
 }
 
 .select-section select {

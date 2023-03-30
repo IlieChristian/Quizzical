@@ -70,14 +70,15 @@ function App() {
   }
 
   function verifyAnswers() {
-    const notAllAnswers = !questionData.every((el) => el.isHeld);
+    const notAllAnswers = !questionData.every(el => el.isHeld);
     setCheckAllResponse(notAllAnswers);
 
-    if (!notAllAnswers) {
+    if(!notAllAnswers) {
       questionData.forEach((el) => {
         if (el.selectedAnswer === el.correctAnswer) {
           setNumCorrectAnswer((prevState) => prevState + 1);
         }
+        setShowResults(true)
       });
     }
   }
@@ -119,6 +120,8 @@ function App() {
       correctAnswer={el.correctAnswer}
     />
   ));
+
+  console.log(showResults)
 
   return (
     <div>
