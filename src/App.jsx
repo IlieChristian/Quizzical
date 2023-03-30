@@ -121,8 +121,6 @@ function App() {
     />
   ));
 
-  console.log(showResults)
-
   return (
     <div>
       <Background />
